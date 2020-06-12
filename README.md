@@ -37,12 +37,12 @@ Look [here](https://github.com/xmatters/xm-labs-xagent-on-kubernetes) for instru
 ## Usage
 There are 3 steps included in this integration that can be used to interact with Kubernetes.
 
-**Kubernetes - Get Pods** - This step gets information on the current pods.
-**Kubernetes - Rollback Deployment** - This step runs `kubectl rollout undo` on a given deployment
-**Kubernetes - Run Command** - This step takes a **parameters** input, which are the parameters it runs `kubectl` with on the agent.
+1. **Kubernetes - Get Pods** - This step gets information on the current pods.
+2. **Kubernetes - Rollback Deployment** - This step runs `kubectl rollout undo` on a given deployment
+3. **Kubernetes - Run Command** - This step takes a **parameters** input, which are the parameters it runs `kubectl` with on the agent.
 
 ### **Kubernetes - Get Pods**
-
+---
 ### Outputs
 
 | Name | Description |
@@ -52,7 +52,7 @@ There are 3 steps included in this integration that can be used to interact with
 | exit_code | the exit code that occured. If this is other than 0 it may have failed. |
 
 ### **Kubernetes - Rollback Deployment**
-
+---
 ### Inputs
 | Name  | Required? | Min | Max | Help Text | Default Value | Multiline |
 | ----- | ----------| --- | --- | --------- | ------------- | --------- |
@@ -66,7 +66,7 @@ There are 3 steps included in this integration that can be used to interact with
 | exit_code | the exit code that occured. If this is other than 0 it may have failed. |
 
 ### **Kubernetes - Run Command**
-
+---
 ### Inputs
 | Name  | Required? | Min | Max | Help Text | Default Value | Multiline |
 | ----- | ----------| --- | --- | --------- | ------------- | --------- |
@@ -78,3 +78,10 @@ There are 3 steps included in this integration that can be used to interact with
 | ---- | ----------  |
 | result | raw output from kubectl rollout undo |
 | exit_code | the exit code that occured. If this is other than 0 it may have failed. |
+
+## Example Flow
+These are the three steps included in the flow.
+
+<kbd>
+<img src="media/ExampleFlow.png"\>
+</kbd>
